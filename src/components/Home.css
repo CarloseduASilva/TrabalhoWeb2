@@ -1,0 +1,61 @@
+/* home.css */
+
+/* Estilos gerais da página */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f7fb;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos do menu */
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin: 15px 0; /* Espaçamento entre os itens */
+  }
+  
+  .menu a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #4a90e2;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 200px; /* Largura definida para os links */
+    text-align: center;
+  }
+  
+  .menu a:hover {
+    background-color: #4a90e2;
+    color: #fff;
+  }
+  
+  .menu a:active {
+    background-color: #357ab7;
+  }
+  

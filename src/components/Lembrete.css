@@ -1,0 +1,153 @@
+/* Garante que o corpo da página ocupe toda a altura e largura da tela */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+    background-color: #f4f4f4; /* Cor de fundo padrão */
+  }
+  
+  /* Estilos do container principal */
+  .home-container {
+    width: 100%;
+    max-width: 1200px; /* Limita a largura do conteúdo */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Tema claro (padrão) */
+  .home-container.light {
+    background-color: white;
+    color: black;
+  }
+  
+  .home-container.light .advice-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .home-container.light .advice-text {
+    color: #333; /* Garantir que o texto do conselho tenha cor legível no modo claro */
+  }
+  
+  .home-container.light button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Tema escuro */
+  .home-container.dark {
+    background-color: #1d1d1d; /* Fundo escuro mais suave */
+    color: white;
+  }
+  
+  .home-container.dark .advice-card {
+    background-color: #333;
+    border: 1px solid #555;
+  }
+  
+  .home-container.dark .advice-text {
+    color: #f4f4f4; /* Texto claro no modo escuro */
+  }
+  
+  .home-container.dark button {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  /* Título */
+  .title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtítulo */
+  .subheading {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo do cartão do conselho */
+  .advice-card {
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Texto do conselho */
+  .advice-text {
+    font-size: 1.5rem;
+    color: inherit; /* Garantir que a cor do texto herde da classe do tema */
+  }
+  
+  /* Botões */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Botão para salvar no favorito */
+  .save-btn {
+    background-color: #FF6347;
+  }
+  
+  .save-btn:hover {
+    background-color: #FF4500;
+  }
+  
+  /* Estilo para lista de favoritos */
+  .favorite-advice {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+  }
+  
+  .favorite-advice ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .favorite-advice li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Botão de tema */
+  .theme-btn {
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .theme-btn:hover {
+    background-color: #555;
+  }
+  
